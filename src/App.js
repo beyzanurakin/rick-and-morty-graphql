@@ -1,9 +1,9 @@
-import { useQuery, gql } from '@apollo/client'
+import HomePage from './pages/HomePage'
 
 export default function App() {
   return (
     <div>
-      <h2>My first Apollo app 🚀</h2>
+      <HomePage />
     </div>
   )
 }
