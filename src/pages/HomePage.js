@@ -80,12 +80,16 @@ const HomePage = () => {
             />
             {data.characters.results.map((character) => {
               return (
-                <Col xs={12} sm={12} md={4} lg={4} xl={4}>
+                <Col xl={6}>
                   <Card
-                    className='my-3 rounded d-flex text-center align-items-center shadow p-3 mb-5 bg-white rounded'
+                    className='my-3 rounded d-flex flex-row shadow p-3 mb-5 bg-white rounded'
                     style={{ border: 'none' }}
                   >
-                    <Card.Img variant='top' src={character.image} />
+                    <Card.Img
+                      className='w-25'
+                      variant='top'
+                      src={character.image}
+                    />
                     <Card.Body>
                       <Card.Title>
                         <b> Name: </b>
